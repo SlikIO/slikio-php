@@ -1,0 +1,19 @@
+{
+  "name": "slikio-php-sdk",
+  "description": "SlikIO PHP SDK",
+  "keywords": ["slikio", "sdk", "slik.io"],
+  "type": "library",
+  "homepage": "https://github.com/SlikIO/slikio-php",
+  "authors": [
+  		{
+  			"name": "SlikIO",
+  			"homepage": "https://github.com/SlikIO"
+  		}
+  ],
+  "require": {
+  	"php": ">=5.0.0"
+  },
+  "autoload": {
+  	"classmap": ["src"]
+  }
+}
