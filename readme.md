@@ -21,7 +21,7 @@ $slikio->sendData(COLLECTION_ID, data);
 ```
 Example:
 ```ruby
-$slikio->sendData("3890fc01750b17412", array(
+$slikio->sendData("col_3890fc01750b17412", array(
 	'user_id' => '123123',
 	'email' => 'user@email.com',
 	'action' => 'planPurchased',

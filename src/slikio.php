@@ -17,6 +17,7 @@ class SlikIO
 	{
 		$this->privateKey = $key;
 		$this->curl = new Curl();
+		$this->curl->setAuth($key);
 	}
 
 	/**
@@ -26,8 +27,8 @@ class SlikIO
 	*/
 	public function sendData($collection_id, $data)
 	{
-		$url = "https://{$this->privateKey}:@app.slik.io/api/v1/collections/{$collection_id}/data";
-		$this->makePOSTRequest($url, $data);
+		$url = "http://app.slik.io/api/v1/collections/{$collection_id}/data";
+		return $this->makePOSTRequest($url, array('data' => $data));
 	}
 
 
