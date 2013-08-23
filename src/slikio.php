@@ -1,22 +1,22 @@
 <?php
-require_once 'curl.php';
+require_once '../vendor/shuber/curl/curl.php';
 
 /**
 * This is the main SlikIO class which provides access to the SlikIO API.
 */
 class SlikIO
 {
-	private $privateKey;
-	private $curl;
+	private $privateKey = "";
+	private $curl = null;
 
 	/**
 	* Creates a new instance of SlikIO
 	* @param Array $config The application configuration, like api keys.
 	*/
-	function __construct($config)
+	function __construct($key)
 	{
-		$secretKey = $config['private'];
-		$curl = new Curl();
+		$this->privateKey = $key;
+		$this->curl = new Curl();
 	}
 
 	/**
@@ -26,8 +26,8 @@ class SlikIO
 	*/
 	public function sendData($collection_id, $data)
 	{
-		$url = "http://{$privateKey}:@localhost:3000/api/v1/collections/{$collection_id}/data"
-		makePOSTRequest($url, $data);
+		$url = "http://{$this->privateKey}:@localhost:3000/api/v1/collections/{$collection_id}/data";
+		$this->makePOSTRequest($url, $data);
 	}
 
 
@@ -37,17 +37,17 @@ class SlikIO
 	* @param Array $data The data to send.
 	* @return CurlResponse The response from the http request.
 	*/
-	private makePOSTRequest($url, $data)
+	private function makePOSTRequest($url, $data)
 	{
 	    $response = null;
 
 		try {
-			$response = $curl->post($url, $data);
+			$response = $this->curl->post($url, $data);
 		} catch (HttpException $e) {
 			echo $e;
 		}
 
-		return $response
+		return $response;
 	}
 }
 
