@@ -4,7 +4,7 @@ This is the SlikIO PHP SDK that allows you to access [SlikIO](http://slik.io) fr
 First, register to [SlikIO](http://slik.io) if you haven't done so already, then get the private API key, and initialize the framework:
 
 ```ruby
-require 'slikio-php/src/slikio.php'
+require 'slikio.php'
 
 $slikio = new SlikIO(array(
 	'secret' => 'YOUR_PRIVATE_API_KEY'
