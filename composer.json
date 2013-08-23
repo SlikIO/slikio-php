@@ -4,6 +4,7 @@
   "keywords": ["slikio", "sdk", "slik.io"],
   "type": "library",
   "homepage": "https://github.com/SlikIO/slikio-php",
+  "license": "MIT",
   "authors": [
   		{
   			"name": "SlikIO",
@@ -11,9 +12,7 @@
   		}
   ],
   "require": {
-  	"php": ">=5.0.0"
-  },
-  "autoload": {
-  	"classmap": ["src"]
+  	"php": ">=5.0.0",
+    "shuber/curl": "*"
   }
 }
