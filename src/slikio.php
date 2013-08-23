@@ -26,7 +26,7 @@ class SlikIO
 	*/
 	public function sendData($collection_id, $data)
 	{
-		$url = "http://{$this->privateKey}:@localhost:3000/api/v1/collections/{$collection_id}/data";
+		$url = "https://{$this->privateKey}:@app.slik.io/api/v1/collections/{$collection_id}/data";
 		$this->makePOSTRequest($url, $data);
 	}
 
