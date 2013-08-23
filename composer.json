@@ -1,5 +1,5 @@
 {
-  "name": "slikio-php-sdk",
+  "name": "slikio/php-sdk",
   "description": "SlikIO PHP SDK",
   "keywords": ["slikio", "sdk", "slik.io"],
   "type": "library",
