@@ -1,6 +1,6 @@
 {
   "name": "slikio/php-sdk",
-  "description": "SlikIO PHP SDK",
+  "description": "PHP Library for SlikIO - Charts as a service",
   "keywords": ["slikio", "sdk", "slik.io"],
   "type": "library",
   "homepage": "https://github.com/SlikIO/slikio-php",
