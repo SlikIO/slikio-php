@@ -14,5 +14,8 @@
   "require": {
   	"php": ">=5.0.0",
     "shuber/curl": "*"
+  },
+  "scripts":{
+    "post-install-cmd": "echo 'Congratulations!\nSlik.IO gem successfully installed.\nNow sign up at http://slik.io and start creating charts as easy as it gets'"
   }
 }
