@@ -1,14 +1,14 @@
 {
   "name": "slikio/php-sdk",
-  "description": "PHP Library for SlikIO - Charts as a service",
-  "keywords": ["slikio", "sdk", "slik.io"],
+  "description": "PHP Library for SlikIO - Charts for developers",
+  "keywords": ["slikio", "sdk", "slik.io", "charts", "graphs"],
   "type": "library",
-  "homepage": "https://github.com/SlikIO/slikio-php",
+  "homepage": "https://slik.io",
   "license": "MIT",
   "authors": [
   		{
   			"name": "SlikIO",
-  			"homepage": "https://github.com/SlikIO"
+  			"homepage": "https://slik.io"
   		}
   ],
   "require": {
