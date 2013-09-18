@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d82fc29b6521e1ba4b3fdaa3f09b96fc",
+    "hash": "d0209cf68324772b4b153c012395b4a2",
     "packages": [
         {
             "name": "shuber/curl",
