@@ -1,5 +1,5 @@
 <?php
-require_once '../vendor/shuber/curl/curl.php';
+require_once 'vendor/shuber/curl/curl.php';
 
 /**
 * This is the main SlikIO class which provides access to the SlikIO API.
